@@ -1,0 +1,92 @@
+// 字體安裝
+// @font-face {
+//   font-family: 'GenSenRounded2';
+//   src: url(/assets/font/GenSenRounded2TW-B.otf)format('opentype');
+//   font-weight:700;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'GenSenRounded2';
+//   src: url(/assets/font/GenSenRounded2TW-R.otf)format('opentype');
+//   font-weight:500;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'GenSenRounded2';
+//   src: url(/assets/font/GenSenRounded2TW-L.otf)format('opentype');
+//   font-weight:400;
+//   font-style: normal;
+// }
+//-------------------------------
+// Custom.scss
+// Option A: Include all of Bootstrap
+// Required
+@import "/node_modules/bootstrap/scss/functions";
+// Required
+
+@import './base/color';
+@import './base/spacing';
+@import './base/text';
+$table-bg:                    none ;
+@import './components/card';
+@import './helpers/variables';
+@import './helpers/variables-dark';
+// @import "/node_modules/bootstrap/scss/variables";
+// @import "/node_modules/bootstrap/scss/variables-dark";
+@import "/node_modules/bootstrap/scss/maps";
+@import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/root";
+// Include any default variable overrides here (though functions won’t be available)
+
+@import "/node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+// @import '';
+
+
+@import './pages/index.scss';
+// @import './pages/about.scss';
+// @import './pages/product-list.scss';
+// @import './pages/product-info.scss';
+// @import './layout/header.scss';
+// @import './layout/footer.scss';
+
+// @import './components/breadcrumb';
+// @import './components/dropdown';
+// @import './components/badge';
+// @import './components/nav-bar';
+// @import './components/pagination';
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+.hero-bg-img{
+  height: 420px;
+  background-image: url(../images/index-intro/3ewLAKn.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.main-btn{
+  background-color: $black;
+  color: $white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: $font-size-base * 1.25;
+  border-radius: 4px;
+  &:hover{
+    background-color: $success;
+    color: $white;
+  }
+}
+.evaluate-goods{
+  object-fit: fill;
+}
+.transport-icon{
+  width: 115px;
+  height: 115px;
+}
+.card-img{
+  width: 84px;
+  height: auto;
+}

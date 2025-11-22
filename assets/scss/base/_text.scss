@@ -1,0 +1,41 @@
+$font-size-base:              1rem;
+$font-weight-medium:          500;
+.p-xl {
+  font-size: $font-size-base * 1.75; // 28px
+}
+.p-lg {
+  font-size: $font-size-base * 1.25; // 20px
+}
+
+.p-md {
+  font-size: $font-size-base * 1;    // 16px
+}
+
+.p-sm {
+  font-size: $font-size-base * 0.875; // 14px
+}
+
+.p-xs {
+  font-size: $font-size-base * 0.75;  // 12px
+}
+.label-xl {
+  font-size: $font-size-base * 2;     // 32px
+  font-weight: $font-weight-medium; // 或 500
+}
+
+.lb-lg {
+  font-size: $font-size-base * 1.5;   // 24px
+  font-weight: $font-weight-medium;
+}
+
+.lb-md {
+  font-size: $font-size-base * 1.25;  // 20px
+  font-weight: $font-weight-medium;
+}
+
+.lb-sm {
+  font-size: $font-size-base * 1;     // 16px
+  font-weight: $font-weight-medium;
+}
+$headings-margin-bottom:0;
+$paragraph-margin-bottom:0;
