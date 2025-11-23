@@ -3,6 +3,6 @@ import './assets/scss/all.scss';
 import * as bootstrap from 'bootstrap';
 import axios from 'axios';
 import './coding';
-import './static-content';
+// import './static-content';
 console.log('Hello world');
 

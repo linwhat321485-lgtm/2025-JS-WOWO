@@ -1,35 +1,36 @@
 import axios from "axios";
 
 console.log('!!');
+const BASE_URL = import.meta.env.BASE_URL;
 const evaluate01 = document.querySelector('#evaluate01');
 const evaluate02 = document.querySelector('#evaluate02');
 const evaluateData01 =[
     {
         name: '王六角',
-        avatarImg: '../assets/images/avatar/g.png',
+        avatarImg: 'assets/images/avatar/g.png',
         product: 'Jodan 雙人床架',
-        productImg: '../assets/images/product-mini/g.png',
+        productImg: 'assets/images/product-mini/g.png',
         content: 'CP值很高。',
     },
     {
         name: 'Leaf',
-        avatarImg: '../assets/images/avatar/e.png',
+        avatarImg: 'assets/images/avatar/e.png',
         product: 'Antony 雙人床架',
-        productImg: '../assets/images/product-mini/a.png',
+        productImg: 'assets/images/product-mini/a.png',
         content: 'CP值很高。',
     },
     {
         name: '美濃鄧子琪',
-        avatarImg: '../assets/images/avatar/a.png',
+        avatarImg: 'assets/images/avatar/a.png',
         product: 'Charles 系列儲物組合',
-        productImg: '../assets/images/product-mini/l.png',
+        productImg: 'assets/images/product-mini/l.png',
         content: '廚房必備美用品',
     },
     {
         name: '想吃麥當勞早餐',
-        avatarImg: '../assets/images/avatar/h.png',
+        avatarImg: 'assets/images/avatar/h.png',
         product: 'Jodan 雙人床架',
-        productImg: '../assets/images/product-mini/h.png',
+        productImg: 'assets/images/product-mini/h.png',
         content: 'CP值很高。',
     },
 
@@ -73,11 +74,11 @@ function renderEvaluateData01(){
             <div class="card p-0 rounded-0">
                 <div class="d-flex">
                     <div class="">
-                    <img class="evaluate-goods" src="${item.productImg}" alt="">
+                    <img class="evaluate-goods" src="${BASE_URL}${item.productImg}" alt="">
                     </div>
                     <div class="card-body ps-3 pt-3">
                     <div class="d-flex ailgn-items-center mb-2">
-                        <img src="${item.avatarImg}" alt="custumer" class="img-fluid  me-3" style="width: 40px;">
+                        <img src="${BASE_URL}${item.avatarImg}" alt="custumer" class="img-fluid  me-3" style="width: 40px;">
                         <div class="d-flex flex-column">
                         <span>${item.name}</span>
                         <span class="p-sm text-success">${item.product}</span>
