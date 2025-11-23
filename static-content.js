@@ -1,7 +1,7 @@
 import axios from "axios";
 
 console.log('!!');
-const BASE_URL = import.meta.env.BASE_URL;
+// const BASE_URL = import.meta.env.BASE_URL;
 const evaluate01 = document.querySelector('#evaluate01');
 const evaluate02 = document.querySelector('#evaluate02');
 const evaluateData01 =[
